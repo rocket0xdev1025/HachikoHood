@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#242237" />
+    <title>Hachiko - The Most Loyal Dog</title>
+    <meta
+      name="description"
+      content="Hachiko waited at Shibuya Station for almost ten years. Now the most loyal dog is launching on Robinhood Chain — and saving a spot for you."
+    />
+    <link rel="icon" href="assets/logo.png" />
+    <!-- Link previews. og:image / twitter:image use the ABSOLUTE deployed URL.
+     A relative path ("assets/og.jpg") was tried first: WhatsApp resolved it,
+     Telegram did not, and Telegram is the stricter of the two. Absolute plus
+     og:url/canonical is what every crawler agrees on. If the site ever moves
+     domain, change the four hachikohood.xyz URLs here (og:url, og:image,
+     secure_url, twitter:image, canonical). Image is 1200x630, 100 KB. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hachiko" />
+    <meta property="og:url" content="/" />
+    <meta property="og:title" content="Hachiko - The Most Loyal Dog" />
+    <meta
+      property="og:description"
+      content="Hachiko waited at Shibuya Station for almost ten years. Now the most loyal dog is launching on Robinhood Chain — and saving a spot for you."
+    />
+    <meta property="og:image" content="/assets/og.jpg" />
+    <meta
+      property="og:image:secure_url"
+      content="/assets/og.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Hachiko jumping up to greet his owner on the station platform"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hachiko - The Most Loyal Dog" />
+    <meta
+      name="twitter:description"
+      content="Hachiko waited at Shibuya Station for almost ten years. Now the most loyal dog is launching on Robinhood Chain — and saving a spot for you."
+    />
+    <meta
+      name="twitter:image"
+      content="/assets/og.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Hachiko jumping up to greet his owner on the station platform"
+    />
+    <link rel="canonical" href="/" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg class="icon-defs" aria-hidden="true">
+      <defs>
+        <symbol id="telegram" viewBox="0 0 24 24">
+          <path d="m21 3-4 18-6-5-3 3 1-6L21 3 3 10l6 3" />
+        </symbol>
+        <symbol id="x" viewBox="0 0 24 24">
+          <path d="m5 4 14 16h-4L2 4h4m13 0L5 20" />
+        </symbol>
+        <symbol id="chart" viewBox="0 0 24 24">
+          <path d="M4 3v17h17M7 15l4-5 4 3 6-8" />
+        </symbol>
+        <symbol id="paw" viewBox="0 0 24 24">
+          <path d="M7 16q5-10 10 0t-5 4q-8 2-5-4" />
+          <ellipse cx="5" cy="9" rx="2" ry="3" />
+          <ellipse cx="10" cy="5" rx="2" ry="3" />
+          <ellipse cx="16" cy="5" rx="2" ry="3" />
+          <ellipse cx="21" cy="10" rx="2" ry="3" />
+        </symbol>
+      </defs>
+    </svg>
+    <header class="nav">
+      <a href="#home" class="brand"
+        ><img src="assets/logo.png" alt="Hachiko" /><span
+          >HACHIKO<small>ハチ公</small></span
+        ></a
+      >
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#lore">His story</a><a href="#tokenomics">Good-boy-nomics</a
+        ><a href="#buy">How to buy</a><a href="#community">The pack</a>
+      </nav>
+      <div class="socials">
+        <button data-link="telegram" aria-label="Telegram">
+          <svg><use href="#telegram" /></svg></button
+        ><button data-link="x" aria-label="X">
+          <svg><use href="#x" /></svg></button
+        ><button data-link="chart" aria-label="Chart">
+          <svg><use href="#chart" /></svg>
+        </button>
+      </div>
+      <button class="menu" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+    </header>
+    <main>
+      <div
+        class="ca-bar"
+        id="ca-bar"
+        role="region"
+        aria-label="Contract address"
+      >
+        <span class="ca-tag">CONTRACT</span
+        ><code class="ca-value" id="ca-value">will be launched soon</code
+        ><button
+          class="ca-copy"
+          id="ca-copy"
+          type="button"
+          aria-label="Copy the contract address"
+        >
+          Copy
+        </button>
+      </div>
+      <section class="hero" id="home" aria-label="Meet Hachiko at the station">
+        <div class="station-back"></div>
+        <div class="train-track" aria-hidden="true">
+          <div class="train">
+            <img src="assets/train.webp" alt="" /><img
+              src="assets/train.webp"
+              alt=""
+            /><img src="assets/train.webp" alt="" />
+          </div>
+        </div>
+        <div class="station-front"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <div class="chain-tag">A VERY GOOD BOY ON ROBINHOOD CHAIN</div>
+          <h1>
+            HACHI<span>KO<span class="star">✦</span></span>
+          </h1>
+          <h2>The Most Loyal Dog</h2>
+          <p>
+            Some chase the next big thing.<br />We found someone worth staying
+            for.
+          </p>
+          <a class="button lime" href="#lore"
+            >Story <svg><use href="#paw" /></svg></a
+          ><a class="button light play-cta" id="play-cta" href="#game"
+            >Play Game and Earn! <span class="cta-mark">↓</span></a
+          >
+        </div>
+        <div class="platform-sign">
+          <b>渋谷駅</b><span>SHIBUYA STATION</span
+          ><small>THE NEXT STOP IS TOGETHER.</small>
+        </div>
+        <div class="hero-scene" id="hero-scene">
+          <div class="speech" id="speech" aria-live="polite">
+            My favourite human is here! ♡
+          </div>
+          <div class="reunion" id="reunion">
+            <canvas
+              id="reunion-canvas"
+              width="900"
+              height="900"
+              aria-label="Hachiko greeting his owner"
+            ></canvas
+            ><img
+              src="assets/reunion.webp"
+              alt="Hachiko happily greeting his owner at the station"
+            />
+          </div>
+          <button
+            class="solo-dog"
+            id="solo-dog"
+            aria-label="Pet Hachiko"
+            hidden
+          >
+            <img src="assets/sitting.webp" alt="Hachiko waiting" /><canvas
+              width="512"
+              height="512"
+              aria-hidden="true"
+            ></canvas>
+          </button>
+          <div id="hearts" aria-hidden="true"></div>
+        </div>
+        <div class="scene-ui">
+          <span class="play-label">PLAY WITH HACHI <b>↘</b></span>
+          <div class="controls">
+            <button data-action="hello" aria-pressed="true">♡ Say hello</button
+            ><button data-action="walk" aria-pressed="false">Let's walk</button
+            ><button data-action="wait" aria-pressed="false">
+              Wait with me</button
+            ><button id="train-button" aria-label="Call the train">
+              Choo choo!</button
+            ><button id="motion" aria-label="Pause motion">Ⅱ</button>
+          </div>
+          <small>Little paws. Big feelings. Try the buttons.</small>
+        </div>
+        <div class="hero-bottom">
+          <span>忠犬ハチ公 · THE LOYAL ONE</span
+          ><a href="#lore">His story lives on ↓</a>
+        </div>
+      </section>
+      <div class="marquee" aria-hidden="true">
+        <div>
+          GOOD BOY ENERGY ✦ ZERO TAX ✦ ALL HEART ✦ ROBINHOOD CHAIN ✦ GOOD BOY
+          ENERGY ✦ ZERO TAX ✦ ALL HEART ✦ ROBINHOOD CHAIN ✦
+        </div>
+      </div>
+      <section class="lore" id="lore" data-layered="pending">
+        <div class="season-scenes">
+          <img
+            class="season-bg active"
+            data-bg="spring"
+            src="assets/spring.webp"
+            alt="Hachiko waiting at the station in spring"
+          /><img
+            class="season-bg"
+            data-bg="rain"
+            src="assets/rain-new.webp"
+            alt="The same station during summer rain"
+            loading="lazy"
+          /><img
+            class="season-bg"
+            data-bg="autumn"
+            src="assets/autumn-new.webp"
+            alt="The same station in autumn"
+            loading="lazy"
+          /><img
+            class="season-bg"
+            data-bg="winter"
+            src="assets/winter.webp"
+            alt="The same station in winter"
+            loading="lazy"
+          />
+        </div>
+        <button id="lore-dog" aria-label="Keep Hachiko company">
+          <canvas width="600" height="700" aria-hidden="true"></canvas
+          ><img
+            src="assets/sitting.webp"
+            alt="Hachiko waiting through every season"
+          />
+        </button>
+        <div class="weather" aria-hidden="true"></div>
+        <div class="lore-shade"></div>
+        <div class="lore-copy">
+          <span class="section-label">01 / A HEART THAT NEVER LEFT</span>
+          <h2>Seasons changed.<br /><em>Hachi stayed.</em></h2>
+          <p>
+            Every day, Hachiko met his owner at Shibuya Station. When his owner
+            didn't return, Hachi kept coming back. For almost ten years.
+          </p>
+          <p>
+            Rain, snow, a thousand falling leaves.<br />Same spot. Same hope.
+            Same very good boy.
+          </p>
+          <div class="lore-note">
+            <span>♡</span> Now, he's waiting for his new pack.<br />That's you,
+            by the way.
+          </div>
+          <a
+            class="source"
+            href="https://www.gotokyo.org/en/spot/86/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >A real dog. A real story. ↗</a
+          >
+        </div>
+        <div class="season-panel">
+          <div>
+            <span>SAME PLACE. EVERY SEASON.</span>
+            <p id="season-caption">A little blossom. A lot of hope.</p>
+          </div>
+          <div class="season-buttons" aria-label="Change the season">
+            <button data-season="spring" aria-pressed="true">✿ Spring</button
+            ><button data-season="rain" aria-pressed="false">☂ Rain</button
+            ><button data-season="autumn" aria-pressed="false">❋ Autumn</button
+            ><button data-season="winter" aria-pressed="false">❄ Winter</button>
+          </div>
+        </div>
+      </section>
+      <section class="game-film" id="game" aria-label="Hachiko film">
+        <video
+          class="game-film-video"
+          src="assets/section2.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        ></video>
+      </section>
+      <section class="tokenomics section" id="tokenomics">
+        <div class="section-top">
+          <span class="section-label">03 / NO TRICKS. JUST TREATS.</span
+          ><span class="hand-note">Sit. Stay. Keep it simple. ↴</span>
+        </div>
+        <h2>GOOD-BOY<span>-NOMICS.</span></h2>
+        <div class="metrics">
+          <article class="metric supply">
+            <strong>1B</strong>
+            <h3>Total supply</h3>
+            <p>One billion HACHIKO.<br />One big happy pack.</p>
+            <svg><use href="#paw" /></svg
+            ><span class="sticker metric-sticker" aria-hidden="true"
+              ><img
+                src="assets/stickers/04-coin-hug.webp"
+                alt=""
+                width="320"
+                height="320"
+                loading="lazy"
+            /></span>
+          </article>
+          <article class="metric tax">
+            <strong>0<small>%</small></strong>
+            <h3>Buy & sell tax</h3>
+            <p>No token tax.<br />More treats for you.</p>
+            <span class="metric-doodle">✦</span
+            ><span class="sticker metric-sticker" aria-hidden="true"
+              ><img
+                src="assets/stickers/03-happy.webp"
+                alt=""
+                width="320"
+                height="320"
+                loading="lazy"
+            /></span>
+          </article>
+          <article class="metric lp">
+            <strong>LP<br />BURNED</strong>
+            <h3>Liquidity pool</h3>
+            <p>LP tokens burned.<br />Made to stay.</p>
+            <span class="metric-doodle">♨</span
+            ><span class="sticker metric-sticker" aria-hidden="true"
+              ><img
+                src="assets/stickers/08-hodl.webp"
+                alt=""
+                width="320"
+                height="320"
+                loading="lazy"
+            /></span>
+          </article>
+          <article class="metric owner">
+            <strong>RE<span>NOUNCED</span></strong>
+            <h3>Ownership</h3>
+            <p>No owner controls.<br />It's a pack thing.</p>
+            <span class="metric-doodle">♡</span
+            ><span class="sticker metric-sticker" aria-hidden="true"
+              ><img
+                src="assets/stickers/06-wagmi.webp"
+                alt=""
+                width="320"
+                height="320"
+                loading="lazy"
+            /></span>
+          </article>
+        </div>
+        <div class="contract">
+          <div>
+            <small>THE OFFICIAL CONTRACT</small
+            ><strong id="ca-inline">will be launched soon</strong>
+          </div>
+          <span>Coming soon</span>
+        </div>
+        <p class="verification-note">
+          Project tokenomics supplied by the team. Contract and on-chain
+          verification links will be added here.
+        </p>
+      </section>
+      <section class="buy section" id="buy">
+        <div class="buy-title">
+          <span class="section-label">04 / HOP ON BOARD</span>
+          <h2>YOUR TICKET<br />TO <em>HACHI.</em></h2>
+          <p>
+            No secret handshake.<br />A wallet and a little good-boy energy.
+          </p>
+          <div class="boarding-ticket">
+            <span>ONE WAY TICKET</span><b>YOU <i>→</i> THE PACK</b
+            ><small>DESTINATION: ROBINHOOD CHAIN</small>
+            <div class="barcode" aria-hidden="true"></div>
+            <span>PASSENGER: A FUTURE FRIEND</span>
+          </div>
+        </div>
+        <div class="steps">
+          <details open>
+            <summary>
+              <span>1</span>
+              <h3>Grab a wallet</h3>
+              <b>+</b>
+            </summary>
+            <div>
+              Set up an EVM-compatible wallet. Your recovery phrase is just for
+              you—keep it private and safely backed up.
+            </div>
+          </details>
+          <details>
+            <summary>
+              <span>2</span>
+              <h3>Find the right station</h3>
+              <b>+</b>
+            </summary>
+            <div>
+              Add Robinhood Chain with its official network settings. Fund your
+              wallet through a supported route and keep enough gas for network
+              fees.<a
+                href="https://docs.robinhood.com/chain/connecting/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Official network guide ↗</a
+              >
+            </div>
+          </details>
+          <details>
+            <summary>
+              <span>3</span>
+              <h3>Sniff out the real HACHIKO</h3>
+              <b>+</b>
+            </summary>
+            <div>
+              Use the verified contract address published on this website to
+              find the correct token. The official contract and exchange link
+              are coming soon.
+            </div>
+          </details>
+          <details>
+            <summary>
+              <span>4</span>
+              <h3>Swap & say woof</h3>
+              <b>+</b>
+            </summary>
+            <div>
+              Check the token address, network, price impact, and gas fee before
+              confirming. Then come meet the pack. Hachi saved you a spot.
+            </div>
+          </details>
+        </div>
+        <canvas
+          class="buy-walker"
+          width="512"
+          height="512"
+          aria-hidden="true"
+        ></canvas>
+      </section>
+      <section class="community" id="community">
+        <div class="community-text">
+          <span class="section-label">05 / YOU'RE HIS PEOPLE NOW</span>
+          <h2>
+            ONE GOOD BOY.<br /><em>A WHOLE LOT<br />OF FRIENDS.</em>
+          </h2>
+          <p>
+            Memes, belly rubs, and people who show up.<br />Sounds like a pretty
+            good place to stay.
+          </p>
+          <div class="community-links">
+            <button class="button dark" data-link="telegram">
+              <svg><use href="#telegram" /></svg> Join the Telegram</button
+            ><button class="button light" data-link="x">
+              <svg><use href="#x" /></svg> Follow on X
+            </button>
+          </div>
+          <small>Only these two are official — watch out for copycats.</small>
+        </div>
+        <div class="community-character">
+          <div class="circle-word">YOU BELONG HERE ♡</div>
+          <img
+            src="assets/pack.webp"
+            alt="Hachiko and his pack, waiting together at the station"
+            width="1000"
+            height="803"
+            loading="lazy"
+          /><button id="boop">Boop the good boy ♡</button
+          ><span class="boop-heart">♥</span>
+        </div>
+      </section>
+      <footer>
+        <a href="#home" class="brand"
+          ><img src="assets/logo.png" alt="" /><span
+            >HACHIKO<small>ALWAYS A GOOD BOY.</small></span
+          ></a
+        >
+        <p>
+          A community memecoin on Robinhood Chain.<br />Independent project. Not
+          affiliated with Robinhood.
+        </p>
+        <a href="#home">Back to Hachi ↑</a
+        ><small>© 2026 Hachiko. Loyalty looks good on you.</small>
+      </footer>
+    </main>
+    <div class="toast" role="status" id="toast"></div>
+    <script src="app.js"></script>
+    <script src="game.js" defer></script>
+    <script
+      type="module"
+      src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+      integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg=="
+      data-cf-beacon='{"version":"2024.11.0","token":"825b78d2a2cd4a5cb904c114a31ca154","r":1,"spa":2}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
