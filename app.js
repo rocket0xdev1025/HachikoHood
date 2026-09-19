@@ -1,10 +1,10 @@
 const $ = (s) => document.querySelector(s),
   all = (s) => [...document.querySelectorAll(s)];
 const officialLinks = {
-  telegram: "https://t.me/HACHIKOinu_RBH",
-  x: "https://x.com/HACHIKOinu_RBH",
-  chart: "",
-  swap: "",
+  telegram: "https://t.me/HACHIKO_hood",
+  x: "https://x.com/HACHIKO_hood",
+  chart: "https://dexscreener.com/robinhood/TBA",
+  swap: "https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA",
 };
 let noticeTimer;
 /* The contract address lives HERE and nowhere else. Paste the real 0x... on
