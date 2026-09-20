@@ -71,7 +71,7 @@ all("[data-link]").forEach((b) =>
   btn.addEventListener("click", () => {
     if (!address) {
       notify(
-        "The contract address will be launched soon. Hachi is still fetching it."
+        "TBA"
       );
       return;
     }
