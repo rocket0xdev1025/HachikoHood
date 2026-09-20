@@ -3,8 +3,8 @@ const $ = (s) => document.querySelector(s),
 const officialLinks = {
   telegram: "https://t.me/HACHIKO_hood",
   x: "https://x.com/HACHIKO_hood",
-  chart: "https://dexscreener.com/robinhood/0xe01fa47ddc93ed72de792f37ec1242be688d7a64",
-  swap: "https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0xe01fa47ddc93ed72de792f37ec1242be688d7a64",
+  chart: "https://dexscreener.com/robinhood/TBA",
+  swap: "https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA",
 };
 let noticeTimer;
 /* The contract address lives HERE and nowhere else. Paste the real 0x... on
@@ -71,7 +71,7 @@ all("[data-link]").forEach((b) =>
   btn.addEventListener("click", () => {
     if (!address) {
       notify(
-        "0xe01fa47ddc93ed72de792f37ec1242be688d7a64"
+        "TBA"
       );
       return;
     }
