@@ -1,8 +1,8 @@
 const $ = (s) => document.querySelector(s),
   all = (s) => [...document.querySelectorAll(s)];
 const officialLinks = {
-  telegram: "https://t.me/HACHIKO_hood",
-  x: "https://x.com/HACHIKO_hood",
+  telegram: "https://t.me/HachikoInuRH",
+  x: "https://x.com/HachikoInuRH",
   chart: "https://dexscreener.com/robinhood/TBA",
   swap: "https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA",
 };
