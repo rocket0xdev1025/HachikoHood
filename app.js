@@ -3,8 +3,8 @@ const $ = (s) => document.querySelector(s),
 const officialLinks = {
   telegram: "https://t.me/HachikoInuRH",
   x: "https://x.com/HachikoInuRHX",
-  chart: "https://dexscreener.com/robinhood/0x344cdc7a6a8b7a1e65fee62284ca240ed52b8fb7",
-  swap: "https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0x344cdc7a6a8b7a1e65fee62284ca240ed52b8fb7",
+  chart: "https://dexscreener.com/robinhood/0x344Cdc7a6A8B7A1e65fEE62284CA240eD52b8FB7",
+  swap: "https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0x344Cdc7a6A8B7A1e65fEE62284CA240eD52b8FB7",
 };
 let noticeTimer;
 /* The contract address lives HERE and nowhere else. Paste the real 0x... on
@@ -71,7 +71,7 @@ all("[data-link]").forEach((b) =>
   btn.addEventListener("click", () => {
     if (!address) {
       notify(
-        "0x344cdc7a6a8b7a1e65fee62284ca240ed52b8fb7"
+        "0x344Cdc7a6A8B7A1e65fEE62284CA240eD52b8FB7"
       );
       return;
     }
@@ -85,7 +85,7 @@ all("[data-link]").forEach((b) =>
         btn.dataset.state = "";
       }, 1900);
     };
-    copy(address)
+    copy(address) 
       .then(done)
       .catch(() =>
         fallback(address)
